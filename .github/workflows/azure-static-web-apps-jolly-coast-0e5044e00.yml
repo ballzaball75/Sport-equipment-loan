@@ -44,3 +44,5 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_COAST_0E5044E00 }}
           action: "close"
+        env:
+          VITE_API_BASE: https://app-clinicapp-api-<username>.azurewebsites.net
