@@ -32,6 +32,8 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          VITE_API_BASE: https://sport-equipment-loan-66025650-d0dffnc0gqazg4b5.southeastasia-01.azurewebsites.net/
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -44,5 +46,3 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_COAST_0E5044E00 }}
           action: "close"
-        env:
-          VITE_API_BASE: https://sport-equipment-loan-66025650-d0dffnc0gqazg4b5.southeastasia-01.azurewebsites.net/
