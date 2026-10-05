@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'Sport-Equipment-Loan-66025650'
           slot-name: 'Production'
-          package: .
+          package: ./server
           
